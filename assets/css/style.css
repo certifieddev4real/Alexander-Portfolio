@@ -1,0 +1,53 @@
+/*-----------------------------------*\
+  #style.css
+\*-----------------------------------*/
+
+/**
+ * copyright 2024 certifieddev
+ */
+
+/**
+ * TABLE OF CONTENT
+ *
+ * Reset..........................Removed browser default style
+ * Custom properties..............Global variables
+ * Typography.....................Typography style
+ * Header.........................Header style
+ * Footer.........................Footer style
+ * Media queries..................Responsive for all devices
+ */
+
+ /*-----------------------------------*\
+  #RESET
+\*-----------------------------------*/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Jost", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+/*-----------------------------------*\
+  #CUSTOM PROPERTY
+\*-----------------------------------*/
+
+:root {
+
+    /* colors */
+
+    --BG-COLOR: #fff;
+    --TEXT-COLOR: #000;
+    --SECONDARY-COLOR: #a09dab;
+    --MAIN-COLOR: #f75023;
+
+    /* typography */
+
+    --BIG-FONT: 5rem;
+    --H2-FONT: 3rem;
+    --P-FONT: 1.1rem;
+    
+}
