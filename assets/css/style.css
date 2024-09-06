@@ -44,13 +44,13 @@
     --BG-COLOR: #fff;
     --TEXT-COLOR: #000;
     --SECONDARY-COLOR: #a09dab;
-    --MAIN-COLOR: #f75023;
+    --MAIN-COLOR: #3c47e6;
 
     /* typography */
 
     --BIG-FONT: 5rem;
     --H2-FONT: 3rem;
-    --P-FONT: 1.1rem;
+    --P-FONT: 1.3rem;
     
 }
 
@@ -73,20 +73,20 @@ body {
   align-items: center;
   justify-content: space-between;
   background: transparent;
-  padding: 30px 18%;
+  padding: 2rem 3rem 0;
   transition: .3s;
 }
 
 .header.sticky {
   background: var(--BG-COLOR);
-  padding: 13px 18%;
+  padding: 2rem 3rem 0;
   box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 
 .logo img {
   max-width: 100%;
-  width: 130px;
-  height: auto;
+  width: 200px;
+  height: 100px;
 }
 
 .navlist {
@@ -110,7 +110,7 @@ body {
   width: 0;
   height: 2px;
   background-color: var(--MAIN-COLOR);
-  bottom: -3px;
+  bottom: 0;
   left: 0;
   transition: ease .40s;
 }
@@ -184,7 +184,7 @@ section {
 
 .home-text h5 {
   margin-bottom: 23px;
-  font-size: 19px;
+  font-size: 2rem;
   font-weight: 500;
 }
 
@@ -206,7 +206,7 @@ span {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  background: #634ec2;
+  background: var(--MAIN-COLOR);
   font-size: 17px;
   color: var(--BG-COLOR);
   margin-right: 22px;
@@ -215,7 +215,9 @@ span {
 
 .social a:hover {
   transform: scale(1.1);
-  background: var(--MAIN-COLOR);
+  background: var(--BG-COLOR);
+  color: var(--MAIN-COLOR);
+  border: 2px solid var(--MAIN-COLOR);
   transition: .4s;
 }
 
@@ -233,6 +235,9 @@ span {
 
 .btn:hover {
   transform: scale(1.1);
+  color: var(--MAIN-COLOR);
+  background: var(--BG-COLOR);
+  border: 2px solid var(--MAIN-COLOR);
 }
 
 .home-img img {
