@@ -13,6 +13,8 @@
  * Custom properties..............Global variables
  * Typography.....................Typography style
  * Header.........................Header style
+ * Home.........................Home style
+ * Sub service.........................Sub service style
  * Footer.........................Footer style
  * Media queries..................Responsive for all devices
  */
@@ -51,3 +53,217 @@
     --P-FONT: 1.1rem;
     
 }
+
+body {
+  background-color: var(--BG-COLOR);
+  color: var(--TEXT-COLOR);
+}
+
+/*-----------------------------------*\
+  #HEADER
+\*-----------------------------------*/
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 30px 18%;
+  transition: .3s;
+}
+
+.header.sticky {
+  background: var(--BG-COLOR);
+  padding: 13px 18%;
+  box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+
+.logo img {
+  max-width: 100%;
+  width: 130px;
+  height: auto;
+}
+
+.navlist {
+  display: flex;
+}
+
+.navlist li {
+  position: relative;
+}
+
+.navlist a {
+  font-size: var(--P-FONT);
+  color: var(--TEXT-COLOR);
+  font-weight: 500;
+  padding: 10px 27px;
+}
+
+.navlist a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color: var(--MAIN-COLOR);
+  bottom: -3px;
+  left: 0;
+  transition: ease .40s;
+}
+
+.navlist a:hover::after {
+  width: 100%;
+}
+
+#menu-icon {
+  font-size: 35px;
+  color: var(--TEXT-COLOR);
+  z-index: 10001;
+  cursor: pointer;
+  display: none;
+}
+
+.top-btn {
+  display: inline-block;
+  padding: 9px 30px;
+  background: transparent;
+  border: 2px solid var(--MAIN-COLOR);
+  border-radius: 30px;
+  color: var(--TEXT-COLOR);
+  letter-spacing: 1px;
+  font-size: var(--P-FONT);
+  font-weight: 500;
+  transition: ease .50s;
+}
+
+.top-btn:hover {
+  transform: scale(1.1);
+  background: var(--MAIN-COLOR);
+  border: 2px solid var(--MAIN-COLOR);
+  color: var(--BG-COLOR);
+}
+
+/*-----------------------------------*\
+  #HOME
+\*-----------------------------------*/
+
+section {
+  padding: 100px 18%;
+}
+
+.home {
+  min-height: 100vh;
+  height: 100%;
+  width: 100%;
+  background: url(../images/background.jpg);
+  background-size: cover;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  grid-gap: 4rem;
+}
+
+.home-text h3 {
+  margin: 1rem 0;
+  color: var(--MAIN-COLOR);
+  font-size: 4rem;
+  font-weight: 500;
+}
+
+.home-text h1 {
+  margin: 10px 0px 25px;
+  font-size: var(--BIG-FONT);
+  line-height: 1;
+  font-weight: 500;
+}
+
+.home-text h5 {
+  margin-bottom: 23px;
+  font-size: 19px;
+  font-weight: 500;
+}
+
+span {
+  color: var(--MAIN-COLOR);
+}
+
+.home-text p {
+  font-size: var(--P-FONT);
+  color: var(--SECONDARY-COLOR);
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+.social a {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #634ec2;
+  font-size: 17px;
+  color: var(--BG-COLOR);
+  margin-right: 22px;
+  margin-bottom: 30px;
+}
+
+.social a:hover {
+  transform: scale(1.1);
+  background: var(--MAIN-COLOR);
+  transition: .4s;
+}
+
+.btn {
+  display: inline-block;
+  color: var(--BG-COLOR);
+  background: var(--MAIN-COLOR);
+  font-size: var(--P-FONT);
+  padding: 10px;
+  font-weight: 500;
+  line-height: 24px;
+  border-radius: 30px;
+  transition: ease .4s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+.home-img img {
+  max-width: 100%;
+  width: 540px;
+  height: auto;
+}
+
+/*-----------------------------------*\
+  #SUB SERVICE
+\*-----------------------------------*/
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
+  grid-gap: 2rem;
+  align-items: center;
+  text-align: center;
+}
+
+.sub-box {
+  padding: 45px 45px;
+  transition: ease .5s;
+  cursor: pointer;
+}
+
+.sub-img img {
+  max-width: 100%;
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+

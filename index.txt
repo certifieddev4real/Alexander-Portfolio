@@ -1,3 +1,43 @@
 Alexander Fisayo
 
 This is a personal portfolio made by certifieddev
+
+Background image pallete(Just incase);
+
+-Prim
+#f0e0e8
+
+-Blossom
+#dcafc5
+
+-Cavern Pink
+#e0c0ba
+
+-Blue Haze
+#c2bfd6
+
+#---------- HEADER ----------#
+
+alt = Alexander home
+
+Home
+Services
+Portfolio
+Service
+Contact
+
+Download Resume
+
+Hello, I'm
+Alexander Fisayo
+A Copywriter From Nigeria
+I'm a Copywriter based in Nigeria, and I'm deeply passionate and dedicated to my work.
+
+About me
+
+
+Creativity - Fresh ideas and unique perspectives fuel my writing, ensuring that every piece is infused with creativity and originality.
+
+Clarity & Conciseness - Precision is paramount. Each word is deliberate, guaranteeing clarity and impact in everything I create.
+
+Adaptability - I'm adaptable, continuously evolving to tackle new challenges and tailoring my approach to fit every unique situation.
