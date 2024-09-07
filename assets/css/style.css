@@ -15,6 +15,8 @@
  * Header.........................Header style
  * Home.........................Home style
  * Sub service.........................Sub service style
+ * About.........................About style
+ * Portfolio.........................Portfolio style
  * Footer.........................Footer style
  * Media queries..................Responsive for all devices
  */
@@ -79,7 +81,7 @@ body {
 
 .header.sticky {
   background: var(--BG-COLOR);
-  padding: 2rem 3rem 0;
+  padding: 5px 3rem 0;
   box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
 }
 
@@ -188,7 +190,7 @@ section {
   font-weight: 500;
 }
 
-span {
+.em {
   color: var(--MAIN-COLOR);
 }
 
@@ -252,8 +254,8 @@ span {
 
 .items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, auto));
-  grid-gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
   align-items: center;
   text-align: center;
 }
@@ -266,9 +268,97 @@ span {
 
 .sub-img img {
   max-width: 100%;
-  width: 60px;
+  width: 6rem;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 2rem;
 }
 
+.sub-img h3 {
+  margin-bottom: 2rem;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.sub-box p {
+  font-size: var(--P-FONT);
+  color: var(--SECONDARY-COLOR);
+  line-height: 29px;
+}
+
+.sub-box:hover {
+  background: #fff;
+  box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+  border-radius: 12px;
+  will-change: transform;
+  transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+}
+
+/*-----------------------------------*\
+  #ABOUT
+\*-----------------------------------*/
+
+.about {
+  display: grid;
+  grid-template-columns: repeat(2, 2fr);
+  align-items: center;
+  gap: 2rem;
+}
+
+.about-img img {
+  max-width: 100%;
+  width: 540px;
+  height: auto;
+}
+
+.about-text h2 {
+  font-size: var(--H2-FONT);
+  font-weight: 500;
+  margin: 8px 0px 25px;
+  line-height: 1.1;
+}
+
+.nowrap {
+  text-wrap: nowrap;
+}
+
+.about-text h3 {
+  color: var(--MAIN-COLOR);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.about-text p {
+  max-width: 550px;
+  font-size: var(--P-FONT);
+  color: var(--SECONDARY-COLOR);
+  line-height: 28px;
+  margin-bottom: 4.2rem;
+}
+
+/*-----------------------------------*\
+  #PORTFOLIO
+\*-----------------------------------*/
+
+.heading {
+  text-align: center;
+}
+
+.heading h2 {
+  font-size: var(--H2-FONT);
+  font-weight: 500;
+  margin: 7px 0px 20px;
+  line-height: 1.1;
+}
+
+.heading h3 {
+  color: var(--MAIN-COLOR);
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.heading p {
+  font-size: var(--P-FONT);
+  color: var(--SECONDARY-COLOR);
+  line-height: 2.4rem;
+}
 
