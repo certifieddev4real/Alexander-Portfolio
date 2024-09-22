@@ -17,6 +17,9 @@
  * Sub service.........................Sub service style
  * About.........................About style
  * Portfolio.........................Portfolio style
+ * Service.........................Service style
+ * Stats.........................Stats style
+ * Proofs.........................Proofs style
  * Footer.........................Footer style
  * Media queries..................Responsive for all devices
  */
@@ -52,7 +55,7 @@
 
     --BIG-FONT: 5rem;
     --H2-FONT: 3rem;
-    --P-FONT: 1.3rem;
+    --P-FONT: 1.2rem;
     
 }
 
@@ -362,3 +365,249 @@ section {
   line-height: 2.4rem;
 }
 
+.portfolio-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+  gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.col {
+  position: relative;
+}
+
+.col img {
+  max-width: 100%;
+  width: 550px;
+  height: 350px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.layer {
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 12px;
+  transition: all .40s;
+}
+
+.layer:hover {
+  background: linear-gradient(rgba(0,0,0,0.5) 0%, #191919);
+}
+
+.layer h3 {
+  position: absolute;
+  width: 100%;
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--BG-COLOR);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all .40s;
+}
+
+.layer:hover h3 {
+  bottom: 52%;
+  opacity: 1;
+}
+
+.layer a {
+  position: absolute;
+  width: 100%;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--SECONDARY-COLOR);
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: all .40s;
+}
+
+.layer:hover a {
+  bottom: 38%;
+  opacity: 1;
+}
+
+.layer:hover a:hover {
+  color: var(--BG-COLOR);
+}
+
+/*-----------------------------------*\
+  #SERVICE
+\*-----------------------------------*/
+
+.service-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.row {
+  background: #fff;
+  box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+  border-radius: 12px;
+  padding: 45px;
+  transition: ease .45s;
+  cursor: pointer;
+}
+
+.s img {
+  height: 65px;
+  width: 65px;
+  background: var(--MAIN-COLOR);
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.s.s-two img {
+  background: #addfc0;
+}
+
+.s.s-three img {
+  background: #222446;
+}
+
+.s.s-four img {
+  background: #89b3aa;
+}
+
+.row h3 {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.row p {
+  font-size: var(--P-FONT);
+  color: var(--SECONDARY-COLOR);
+  line-height: 28px;
+}
+
+.row:hover {
+  will-change: transform;
+  transform: perspective(1000px) rotateX(4.80deg) rotateY(10.23deg) scale3d(1.05,1.05,1.05);
+}
+
+/*-----------------------------------*\
+  #STATS
+\*-----------------------------------*/
+
+.cta-box {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  align-items: center;
+  margin-top: 5rem;
+  text-align: center;
+}
+
+.wrap {
+  background: #fff;
+  box-shadow: 18px 0px 87px 0px rgb(10 15 70 / 7%);
+  border-radius: 12px;
+  padding: 50px;
+  transition: ease .40s;
+  cursor: pointer;
+}
+
+.one{
+  background: #addfc0;
+}
+
+.two {
+  background: #222446;
+}
+
+.three {
+  background: #89b3aa;
+}
+
+.wrap h3 {
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 2px;
+}
+
+.wrap p {
+  font-size: var(--P-FONT);
+}
+
+/*-----------------------------------*\
+  #PROOF
+\*-----------------------------------*/
+
+.screenshot-section {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  overflow: hidden;
+  padding: 2rem 0;
+  margin: auto;
+}
+
+.slider-container {
+  display: flex;
+  gap: 2rem;
+  transition: transform 0.8s ease-in-out;
+  width: 100%; 
+}
+
+.slide {
+  min-width: 100%; /* Ensure each slide takes full width */
+  position: relative;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide img {
+  max-width: 100%;
+  width: 400px; /* Adjust to your desired width */
+  height: 250px; /* Adjust to your desired height */
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.5s ease;
+}
+
+.slide:hover img {
+  transform: scale(1.1);
+}
+
+.layers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 100%;
+  width: 500px;
+  height: 250px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.slide:hover .layers {
+  opacity: 1;
+}
