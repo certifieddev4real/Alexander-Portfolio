@@ -814,6 +814,11 @@ section {
   .items {
     grid-template-columns: 1fr;
   }
+
+  section {
+    padding: 12% 3%;
+    transition: .3s;
+  }
 }
 
 @media (max-width: 768px) {
@@ -873,11 +878,6 @@ section {
   :root {
     --BIG-FONT: 3.4rem;
     --H2-FONT: 2rem;
-  }
-
-  section {
-    padding: 10% 3%;
-    transition: .3s;
   }
 
   .screenshot-section {
