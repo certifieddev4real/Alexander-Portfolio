@@ -33,7 +33,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: "Jost", sans-serif;
+    font-family: var(--FF-JOST);
     list-style: none;
     text-decoration: none;
     scroll-behavior: smooth;
@@ -54,12 +54,14 @@ body {
 
     /* colors */
 
-    --BG-COLOR: #fff;
-    --TEXT-COLOR: #000;
-    --SECONDARY-COLOR: #a09dab;
-    --MAIN-COLOR: #3c47e6;
+    --BG-COLOR: hsl(0, 0%, 100%);
+    --TEXT-COLOR: hsl(0, 0%, 0%);
+    --SECONDARY-COLOR: hsl(253, 8%, 64%);
+    --MAIN-COLOR: hsl(236, 77%, 57%);
 
     /* typography */
+
+    --FF-JOST: 'Jost', sans-serif;
 
     --BIG-FONT: 5rem;
     --H2-FONT: 3rem;
@@ -422,7 +424,7 @@ section {
   opacity: 1;
 }
 
-.layer a {
+.layer h5 {
   position: absolute;
   width: 100%;
   font-size: 17px;
@@ -435,12 +437,9 @@ section {
   transition: all .40s;
 }
 
-.layer:hover a {
+.layer:hover h5 {
   bottom: 38%;
   opacity: 1;
-}
-
-.layer:hover a:hover {
   color: var(--BG-COLOR);
 }
 
@@ -813,6 +812,23 @@ section {
 
   .items {
     grid-template-columns: 1fr;
+  }
+  
+  .layer {
+    background: linear-gradient(rgba(0,0,0,0.5) 0%, #191919);
+  }
+  
+  
+  .layer h3 {
+    bottom: 52%;
+    opacity: 1;
+  }
+  
+  
+  .layer h5 {
+    bottom: 38%;
+    opacity: 1;
+    color: var(--BG-COLOR);
   }
 
   section {

@@ -2,20 +2,6 @@ Alexander Fisayo
 
 This is a personal portfolio made by certifieddev
 
-Background image pallete(Just incase);
-
--Prim
-#f0e0e8
-
--Blossom
-#dcafc5
-
--Cavern Pink
-#e0c0ba
-
--Blue Haze
-#c2bfd6
-
 #---------- HEADER ----------#
 
 alt = Alexander home
@@ -28,6 +14,8 @@ Contact
 
 Download Resume
 
+#---------- HOME ----------#
+
 Hello, I'm
 Alexander Fisayo
 A Copywriter From Nigeria
@@ -35,6 +23,7 @@ I'm a Copywriter, and I'm deeply passionate and dedicated to my work.
 
 About me
 
+#---------- SUB SERVICE ----------#
 
 Creativity - Fresh ideas and unique perspectives fuel my writing, ensuring that every piece is infused with creativity and originality.
 
@@ -42,11 +31,15 @@ Clarity & Conciseness - Precision is paramount. Each word is deliberate, guarant
 
 Adaptability - I'm adaptable, continuously evolving to tackle new challenges and tailoring my approach to fit every unique situation.
 
+#---------- ABOUT ----------#
+
 I'm a Copywriter & Sales funnel engineer Crafting compelling copy and high-converting sales funnels is my fortei.
 
 Hello! I'm a copywriter and sales funnel engineer, passionate about crafting words that convert. With years of experience, I've honed the skills to design strategies that drive results. I enjoy collaborating at every stage to ensure your success.
 
 Hire Me
+
+#---------- PORTFOLIO ----------#
 
 Portfolio
 
@@ -72,28 +65,26 @@ In Less Than 7 Days, You can Bake Sourdough Like a...
 Sales funnel for T.S.S.A
 The 5 Reasons to Make Your Own Sourdough...
 
+#---------- SERVICES ----------#
+
 Services
 What I Do For Clients
 
 You've searched far and wide for the right person to help take your business to the next level… Good news, you've found them😎. Here are the skills I bring to the table.
 
 Email Copywriting
-DR Copywriting
-Sales-funnel Building
-Social Media Marketing
-
-
 Emails that don’t just land in inboxes but create genuine connections, sparking curiosity and guiding readers to take action
 
-
+DR Copywriting
 Every word counts. I write with precision, creating a message that subtly nudges your audience toward the response you want.
 
-
+Sales-funnel Building
 Building sales funnels that feel natural yet strategic, guiding prospects through a journey that transforms interest into loyal customers.
 
-
+Social Media Marketing
 Crafting social media strategies that captivate and convert, leaving your audience eager to engage, follow, and connect with your brand.
 
+#---------- STATS ----------#
 My Projects
 Stats📈
 
@@ -105,3 +96,28 @@ Happy Clients
 
 73+
 Global Clients
+
+#---------- PROOF ----------#
+
+Behind The Screens:
+Real-Time Wins & Client Success🎉
+
+Project 1
+Client chat discussion
+
+Project 2
+Web traffic stats
+
+Project 3
+Admin dashboard overview<
+
+#---------- CONTACT ----------#
+
+Let's talk💬
+
+Don't like forms? me too👌... send me a dm instead,
+I'm Only One Click Away😉
+
+#---------- FOOTER ----------#
+
+Copyright &copy; 2024 @d_certified_dev. All Rights Reserved

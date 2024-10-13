@@ -2,6 +2,12 @@
 
 ## Html import links
 
+Favicon
+
+``` html
+<link rel="shortcut icon" href="./assets/images/favicon.svg" type="image/svg+xml" />
+```
+
 Boxicon
 
 ```html
@@ -27,4 +33,24 @@ Scrollreveal
 ```html
 
 <script src="https://unpkg.com/scrollreveal"></script>
+```
+---
+
+## Colors
+
+``` css
+--BG-COLOR: hsl(0, 0%, 100%);
+--TEXT-COLOR: hsl(0, 0%, 0%);
+--SECONDARY-COLOR: hsl(253, 8%, 64%);
+--MAIN-COLOR: hsl(236, 77%, 57%);
+```
+
+## Typography
+
+``` css
+--FF-JOST: 'Jost', sans-serif;
+
+--BIG-FONT: 5rem;
+--H2-FONT: 3rem;
+--P-FONT: 1.2rem;
 ```
